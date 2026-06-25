@@ -109,7 +109,7 @@ export async function onRequest(context: any) {
         const result = await run(agent, inputItems, {
           stream: true,
           signal,
-          maxTurns: 6,
+          maxTurns: 10,
         });
         for await (const event of result.toStream()) {
           if (signal?.aborted) break;
