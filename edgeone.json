@@ -1,0 +1,13 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "cloudFunctions": {
+    "nodejs": {
+      "includeFiles": []
+    }
+  },
+  "agents": {
+    "framework": "openai-agents-sdk",
+    "externalNodeModules": ["openai", "@openai/agents"]
+  }
+}
